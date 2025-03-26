@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
     <button (click)="increaseCounterBy(1)">+1</button>
     <button (click)="resetCounter()">Reset</button>
     <button (click)="decreaseCounterBy(1)">-1</button>
-  `
+  `,
+  standalone: false
 })
 
 export class Countercomponent {
