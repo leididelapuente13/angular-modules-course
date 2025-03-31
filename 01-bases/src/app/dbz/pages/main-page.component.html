@@ -1,5 +1,5 @@
 <h1 class="text-2xl font-semibold mb-3.5">DBZ Personajes</h1>
 <main class="flex flex-col gap-4 lg:flex-row">
-    <dbz-list [characters]="characters"></dbz-list>
-    <dbz-add-character (onNewCharacter)="onNewCharacter($event)"></dbz-add-character>
+    <dbz-list [characters]="characters" (onDelete)="onDeleteCharacterById($event)"></dbz-list>
+    <dbz-add-character (onNewCharacter)="onCreateCharacter($event)"></dbz-add-character>
 </main>

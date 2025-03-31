@@ -9,10 +9,12 @@ import { Character } from '../../interfaces/character.interface';
 })
 export class FormComponent {
 
+  // declares the event emitter to be used in the parent component
   @Output()
   onNewCharacter: EventEmitter<Character> = new EventEmitter();
 
   public character : Character = {
+    id: '',
     name: '',
     power: 0
   }
@@ -26,6 +28,7 @@ export class FormComponent {
     this.onNewCharacter.emit(this.character);
 
     this.character = {
+      id: '',
       name: '',
       power: 0
     }
